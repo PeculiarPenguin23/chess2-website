@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chessboard</title>
-    <!-- Include CSS and JavaScript -->
+    <!-- Include CSS for chessboard styling -->
     <link rel="stylesheet" href="style.css">
-    <script src="chess.js"></script>
-    <script src="chessboard.js"></script>
+    <!-- Include Chess library dependencies (chess.js and chessboard.js) from CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/chess.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chessboardjs"></script>
 </head>
 <body>
     <div id="board" style="width: 400px"></div>
+
+    <script>
+        // JavaScript code for initializing the chessboard
+        var board = null;
+        var game = new Chess();
+
+        function onDragStart (source, piece, position, orientation) {
+            // Add your drag start logic here
+        }
+
+        function onDrop (source, target) {
+            // Add your drop logic here
+        }
+
+        var config = {
+            draggable: true,
+            position: 'start',
+            onDragStart: onDragStart,
+            onDrop: onDrop,
+        }
+
+        board = ChessBoard('board', config);
+    </script>
 </body>
 </html>
+
