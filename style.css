@@ -1,0 +1,21 @@
+/* Style for chessboard container */
+#board {
+    width: 400px;
+    margin: 0 auto; /* Center the board horizontally */
+}
+
+/* Style for chessboard squares */
+.square-55d63 {
+    background-color: #f0d9b5; /* Light square color */
+}
+
+.square-d18e16 {
+    background-color: #b58863; /* Dark square color */
+}
+
+/* Style for chess pieces */
+/* Customize as needed */
+.chessboard-57e96 .piece {
+    width: 100%;
+    height: 100%;
+}
